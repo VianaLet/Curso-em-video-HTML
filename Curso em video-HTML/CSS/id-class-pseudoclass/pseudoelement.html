@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        ::= pseudo-element
+        > = children*/
+        body{
+            background-color: black;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+        li{
+            display: inline;
+            width: 100%;
+            padding: 5%;
+            
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        a:visited{ /*Se o link já foi visitado vai ficar essa cor vermelho escura*/
+            color: darkred;
+            font-weight: bold;
+        }
+        a:hover{ /*Ao passar o mouse pelo link vai aparecer sublinhado*/
+            text-decoration: underline;
+            color: white;
+            font-weight: bold;
+        }
+        a:active{ /*Quando o link estiver clicado a  cor vai mudar para amareloo*/
+            color: yellow;
+        }
+        a::after{/*Elemento é representado '::' aqui estamos colocando um conteúdo depois do nome */
+        content: '[link]';
+        text-decoration: none;
+        color: darkgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links  com Pseudo-Classe e Pseudo-Elemento</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do curso em vídeo </a></li>
+    </ul>
+</body>
+</html>
