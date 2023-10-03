@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            /* Medidas Absolutas:
+            cm, mm, in. px, pt, pc  essas medidas serão sempre as mesma independente da tela, pode ficar bem pequena em monitores que por exemplo usa 4 pixels
+            Medidas Relativas:
+            em(medida relativa ao tamanho atual da fonte), ex(tamanho relativo a altura x da fonte), rem (parecido com em, mas relativa a raiz configurada no body (root)), vw(viewport), vh(altura da viweport)
+            W3C recomenda usar o px e em
+            1em=16px
+            */
+            font-weight: bolder;
+            /*Temos lighter(mais fininho) normal bold(negrito) bolder(supernegrito. Também pode ser no valor número de 100 em 100 de 100-900*/
+            font-style: italic; /*itálico*/
+            
+            text-decoration: underline; /*Sublinhado*/
+            
+        }
+        h1,h2{
+            font-family: serif;
+            font: italic bolder 3em 'work Sans', sans-serif;
+            /*Shorthand para não escrever cinco coisas toda vez
+            font-style-> font-weight ->font-size ->font-family*/
+        }
+        p{
+            text-align: justify;
+            text-indent: 30px; /*aqui vai criar aquela indentação de parágrafo*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quae sint delectus minima est tenetur nesciunt deserunt dignissimos repellat impedit porro, neque ducimus expe Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt porro cumque animi? Maxime quas libero hic qui repudiandae voluptatum fugiat natus, assumenda dolorem commodi dignissimos consectetur recusandae rerum laboriosam!dita nihil, unde veniam optio quam natus.</p>
+    <h2>Subítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi consequatur itaque temporibus nemo doloribus, expedita quo eos alias consectetur nostrum similique in suscipit eveniet ex quam? Adipisci, sunt corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque deserunt fugiat praesentium. Quam illum necessitatibus nemo fugit provident atque autem dolorem quae tempora, nulla distinctio facilis ut doloribus consequuntur!</p>
+</body>
+</html>

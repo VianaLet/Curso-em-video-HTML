@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: rgba(255, 255, 255, 0.637);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav > a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 50px;
+        
+            
+        }
+        main{
+            background-color: rgba(255, 255, 255, 0.637);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 53px 0px;
+            box-shadow: 4px 3px 1px rgba(0, 0, 0, 0.514);
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias"> <!--Uma seção com duas notícias, dois artigos, e o aside é o conteudo periférico-->
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>sdgadgad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dicta excepturi, earum eos molestias iusto ipsa? Possimus est dolorum, repellendus quas, sint nostrum excepturi vel qui harum voluptatibus voluptas doloribus?</p>
+                    <aside>
+                        <p>Artigo escrito por josé da silva</p>
+                    </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Letícia</p>
+    </footer>
+</body>
+</html>

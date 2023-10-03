@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: gray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 30%;
+        }
+        /*Pseudo-classes são relacionadas ao estado de um determinado elemento.
+        Se ele está ativo, se esta marcado, se está deitado, se está vazio*/
+        div > p{ /*A > informa que é um elemento dentro do outro*/
+            display: none; /*Aqui o parágrafo que está dentro da div será escondido com esse display none*/
+        }
+        div#d1:hover > p { /* aqui estamos falando que quando passar o mouse o parágrafo escondido dentro da div vai aparecer*/
+            display: block;
+            color: aliceblue;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover{
+            background-color: yellow; /*Aqui quando você passar o mouse vai ficar amarelo ':' representa a pseudo-classe*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01
+        <p>Texto escondido</p>
+    </div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
