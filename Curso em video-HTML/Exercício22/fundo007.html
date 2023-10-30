@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
+    <style>
+    #conteiner{
+        background-color: blueviolet;
+        height: 880px;
+        width: 100vw;
+        position: relative;
+    }
+    #conteudo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        /* Daqui pra cima é uma forma de centralizar um elemento filho dentro do elemento pai */
+        background-color: yellow;
+        height: 200px;
+        width: 250px;
+    }  
+    </style>
 </head>
 <body>
     <section id="conteiner">
         <article id="conteudo">
-            <pre>
-                sdaiusdhaj
-                daisudhasdu
-                adsuasd
-            </pre>
-        </article>
-    </section>
+                </article>
+            </section>
 </body>
 </html>
