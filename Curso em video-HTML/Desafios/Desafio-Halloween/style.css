@@ -29,21 +29,22 @@ body{
 }
 header{
     background-color: var(--cor1);
-    height: 100px;
+    height: 90px;
     position: fixed;
     top: 0;
     width: 100%;
 }
 header img{
-    height: 180px;
+    height: 170px;
     float: left;
     position: absolute;
     z-index: 1;
-    top: -25px;
-    left: 170px;
+    top: -35px;
+    left: 90px;
 }
 header h1, h2{
     margin: 0px;
+    padding: 0;
     text-align: center;
     width: 75%;
     font-size: 58px;
@@ -56,8 +57,8 @@ nav{
 
 nav> ul{
     position: relative;
-    margin-top: 32px;
-    margin-right: -270px;
+    margin-top: 5px;
+    margin-right: -24px;
     background-color: #0D0221;
     list-style-type: none;
     display: flex;
@@ -74,12 +75,14 @@ li a{
     text-align: center;
     color: white;
     font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
     
 }
 
 /*  */
 main{
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color:rgba(255, 255, 255, 0.932);
     width: 990px;
     margin: auto;
     padding: 8px;
